@@ -47,7 +47,9 @@ app.*.map.json
 # Widget Preview related
 .widget_preview/
 
-# Demo artifacts: never commit APK or the generated JSON (NFR-03)
+# Demo artifacts: never commit APKs or the generated JSON (NFR-03).
+# Exception: the demo APK shipped at the repo root (no GitHub Releases).
 *.apk
 *.aab
+!/app-release.apk
 big_products.json

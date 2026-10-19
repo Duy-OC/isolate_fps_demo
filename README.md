@@ -18,13 +18,15 @@ trong khi tác vụ nặng chạy nền.
 
 ## 1. Chạy thử nhanh
 
-1. Tải `app-release.apk` trong **[Releases](../../releases)** của repo.
+1. Tải **[app-release.apk](app-release.apk)** ở ngay gốc repo (bên cạnh
+   `README.md`).
 2. Cài vào điện thoại Android (cho phép cài app từ nguồn ngoài khi được hỏi).
 3. Mở app → **Generate** (mặc định 40 MB) hoặc **Chọn tệp JSON** → bấm
    **Run all modes** 2 lần (lần đầu là khởi động nóng).
 
-Không cần cài gì thêm. APK release mặc định được ký bằng debug key – chấp
-nhận được cho bài demo.
+Không cần cài gì thêm. APK (~48 MB, universal – chạy mọi ABI) được build
+từ chính code trong repo, release mặc định ký bằng debug key – chấp nhận
+được cho bài demo.
 
 ## 2. Ảnh / GIF demo
 
@@ -103,7 +105,7 @@ Chi tiết: [docs/architecture.md](docs/architecture.md).
 
 | Đối tượng | Cách chạy | Cần cài |
 |---|---|---|
-| Người chỉ muốn xem demo | Tải APK ở **Releases** | Không cần gì |
+| Người chỉ muốn xem demo | Tải [app-release.apk](app-release.apk) ở gốc repo | Không cần gì |
 | Người chạy từ source | `git clone` → `flutter pub get` → `flutter run --profile` | Flutter SDK + thiết bị Android thật hoặc emulator |
 
 ```bash
